@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <div class="header">
+            <div class="text">Library</div>
+        </div>
+
+        <form>
+            <div class="input-block">
+                <label for="title">What is the title of the book?</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="input-block">
+                <label for="author">Who is the author of the book?</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="input-block">
+                <label for="pages">Number of Pages</label>
+                <input type="number" id="pages" name="pages" required>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="read" name="read">
+                <label for="read"><span>Have you read the book?</span></label>
+            </div>
+            <div class="add-button">
+                <button type="submit" class="add-book">Add book</button>
+            </div>
+
+        </form>
+        <div class="footer">
+            By @TaichiKarna
+        </div>
+    </div>
+    <div class="main">
+        <div class="info">
+            <div class="books-read">Books Read:</div>
+            <div class="books-unread">Books Not Read:</div>
+            <div class="total-books">Total Books:</div>
+            <button class="delete-all">Delete All</button>
+        </div>
+        <div class="info-table">
+            <table class="library">
+                <thead>
+                <tr>
+                <th class="title">title</th>
+                <th class="author">author</th>
+                <th class="pages">pages</th>
+                <th class="status">status</th>
+                <th class="remove">remove</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
